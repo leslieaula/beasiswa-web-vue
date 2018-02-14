@@ -173,7 +173,7 @@ export default {
     }
   }
 
-  i {
+  i, svg {
     margin-left: 5px;
   }
 
