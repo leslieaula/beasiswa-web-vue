@@ -1,10 +1,9 @@
-require('dotenv').config();
-
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const base = require('./webpack.base.config');
 const nodeExternals = require('webpack-node-externals');
 const VueSSRServerPlugin = require('vue-server-renderer/server-plugin');
+const ProcessEnv = require('./process-env');
 
 module.exports = merge(base, {
   target: 'node',
@@ -21,12 +20,7 @@ module.exports = merge(base, {
     whitelist: [/\.css$/, /vuetify/],
   }),
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
-      'process.env.VUE_ENV': '"server"',
-      'process.env.SERVER': `"${process.env.SERVER}"`,
-      'process.env.BASE_URI': `"${process.env.BASE_URI}"`,
-    }),
+    new webpack.DefinePlugin(ProcessEnv),
     new VueSSRServerPlugin(),
   ],
 });

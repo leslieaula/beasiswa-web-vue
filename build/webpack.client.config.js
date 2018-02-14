@@ -1,9 +1,8 @@
-require('dotenv').config();
-
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const base = require('./webpack.base.config');
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin');
+const ProcessEnv = require('./process-env');
 
 const config = merge(base, {
   entry: {
@@ -11,12 +10,7 @@ const config = merge(base, {
   },
   plugins: [
     // strip dev-only code in Vue source
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
-      'process.env.VUE_ENV': '"client"',
-      'process.env.SERVER': `"${process.env.SERVER}"`,
-      'process.env.BASE_URI': `"${process.env.BASE_URI}"`,
-    }),
+    new webpack.DefinePlugin(ProcessEnv),
     // extract vendor chunks for better caching
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
