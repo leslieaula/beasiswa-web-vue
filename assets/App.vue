@@ -22,5 +22,6 @@ export default {
 .wrapper {
   max-width: 1200px;
   padding: 0 30px;
+  margin: auto;
 }
 </style>
