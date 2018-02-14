@@ -4,25 +4,19 @@
       <div class="wrapper">
         <div class="searchmain__box">
           <div class="searchmain__input">
-            <select>
-              <option>
+            <select v-model="type">
+              <option value="1">
                 Cari Beasiswa
               </option>
-              <option>
+              <option value="2">
                 Cari Sekolah
               </option>
             </select>
           </div>
           <div class="searchmain__input">
-            <select>
-              <option>
-                Beasiswa S1
-              </option>
-              <option>
-                Beasiswa S2
-              </option>
-              <option>
-                Beasiswa S3
+            <select v-model="levelInput">
+              <option v-for="levelItem in level" :value="levelItem.value" :key="levelItem.text">
+                {{ levelItem.text }}
               </option>
             </select>
           </div>
@@ -37,6 +31,38 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      type: '1',
+      levelInput: '1',
+      schoolLevel: [
+        { value: '1', text: 'Perguruan Tinggi' },
+        { value: '2', text: 'SMA' },
+        { value: '3', text: 'SMP' },
+        { value: '4', text: 'SD' },
+      ],
+      scholarshipLevel: [
+        { value: '1', text: 'Beasiswa S1' },
+        { value: '2', text: 'Beasiswa S2' },
+        { value: '3', text: 'Beasiswa S3' },
+      ],
+    };
+  },
+  computed: {
+    level() {
+      if (this.type === '1') {
+        return this.scholarshipLevel;
+      } else if (this.type === '2') {
+        return this.schoolLevel;
+      }
+
+      return [];
+    },
+  },
+};
+</script>
 <style lang="scss">
 .searchmain {
   height: 500px;
@@ -90,6 +116,7 @@
     height: 50px;
     border-radius: 5px;
     font-size: 1.2em;
+    min-width: 220px;
   }
 
   input[type=submit] {
