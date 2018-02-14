@@ -3,6 +3,7 @@
   "description": "StackAlterdev Beasiswa Website Interface with VueJS",
   "author": "Rukanda Faridsi <hey@rukanda.xyz>",
   "version": "0.0.1",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server",
     "start": "cross-env NODE_ENV=production node server",
