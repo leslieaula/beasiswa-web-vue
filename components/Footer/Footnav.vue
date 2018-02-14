@@ -2,10 +2,42 @@
   <div class="footnav">
     <div class="wrapper">
       <div class="footnav__item">
-        tes
+        <h6 class="footnav__title">
+          Untuk Lembaga Pendidikan
+        </h6>
+        <div class="footnav__list">
+          <div class="footnav__list__item">
+            <a href="#">Layanan Pemasaran</a>
+          </div>
+          <div class="footnav__list__item">
+            <a href="#">Pembuatan Website dan Aplikasi</a>
+          </div>
+          <div class="footnav__list__item">
+            <a href="#">Kerjasama Lainnya</a>
+          </div>
+        </div>
       </div>
       <div class="footnav__item">
-        tes
+        <h6 class="footnav__title">
+          Untuk Murid dan Orang Tua
+        </h6>
+        <div class="footnav__list">
+          <div class="footnav__list__item">
+            <a href="#">Sekolah dan Perguruan Tinggi</a>
+          </div>
+          <div class="footnav__list__item">
+            <a href="#">Beasiswa</a>
+          </div>
+          <div class="footnav__list__item">
+            <a href="#">Tes Persiapan Beasiswa</a>
+          </div>
+          <div class="footnav__list__item">
+            <a href="#">Info Kegiatan dan Seminar</a>
+          </div>
+          <div class="footnav__list__item">
+            <a href="#">Toko Buku</a>
+          </div>
+        </div>
       </div>
       <div class="footnav__item">
         <h6 class="footnav__title">
@@ -78,6 +110,8 @@
 }
 
 .footnav__list__item {
+  margin: 5px 0;
+
   a {
     color: rgba(255,255,255,.5);
     font-size: .95em;
