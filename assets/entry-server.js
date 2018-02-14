@@ -48,7 +48,7 @@ export default ((context) => {
           route: router.currentRoute,
         }, matchedComponents),
       ]).then(() => {
-        if (isDev) console.log(`data pre-fetch: ${Date.now() - s}ms`);
+        if (isDev) console.log(`data pre-fetch: ${Date.now() - s}ms`); // eslint-disable-line
 
         // After all preFetch hooks are resolved, our store is now
         // filled with the state needed to render the app.
