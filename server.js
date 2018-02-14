@@ -119,7 +119,11 @@ function render(req, res) {
     }
   }
 
-  renderer.renderToString(null, (err, html) => {
+  const context = {
+    url: req.url,
+  };
+
+  renderer.renderToString(context, (err, html) => {
     if (err) {
       return handleError(err);
     }
