@@ -1,1 +1,1 @@
-# beasiswa-web-vue
+# beasiswa-web-vue [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c60228d3e7fe48aab958f48a1a680ae9)](https://www.codacy.com/app/rukandax/beasiswa-web-vue?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rukandax/beasiswa-web-vue&amp;utm_campaign=Badge_Grade)
