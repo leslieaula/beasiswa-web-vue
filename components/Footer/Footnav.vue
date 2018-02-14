@@ -29,9 +29,6 @@
             <a href="#">Beasiswa</a>
           </div>
           <div class="footnav__list__item">
-            <a href="#">Tes Persiapan Beasiswa</a>
-          </div>
-          <div class="footnav__list__item">
             <a href="#">Info Kegiatan dan Seminar</a>
           </div>
           <div class="footnav__list__item">
