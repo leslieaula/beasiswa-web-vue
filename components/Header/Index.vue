@@ -12,19 +12,13 @@
             </a>
             <div class="main-nav__dropdown">
               <div class="main-nav__dropdown__item">
+                <a href="#">Beasiswa S3</a>
+              </div>
+              <div class="main-nav__dropdown__item">
                 <a href="#">Beasiswa S2</a>
               </div>
               <div class="main-nav__dropdown__item">
                 <a href="#">Beasiswa S1</a>
-              </div>
-              <div class="main-nav__dropdown__item">
-                <a href="#">Beasiswa SMA</a>
-              </div>
-              <div class="main-nav__dropdown__item">
-                <a href="#">Beasiswa SMP</a>
-              </div>
-              <div class="main-nav__dropdown__item">
-                <a href="#">Beasiswa SD</a>
               </div>
             </div>
           </div>
