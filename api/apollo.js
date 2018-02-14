@@ -16,30 +16,27 @@ export function createApolloClient(ssr = false) {
     fetch,
   });
 
+  const ileterate = {};
   const cache = new InMemoryCache();
 
   // If on the client, recover the injected state
-  if (!ssr) {
-    // If on the client, recover the injected state
-    if (typeof window !== 'undefined') {
-      const state = window.__INITIAL_STATE__;
-      if (state.apollo) {
-        // If you have multiple clients, use `state.<client_id>`
-        cache.restore(state.apollo.defaultClient);
-      }
-    }
+  if (!ssr && typeof window !== 'undefined') {
+    const state = window.__INITIAL_STATE__;
+
+    // If you have multiple clients, use `state.<client_id>`
+    if (state.apollo) cache.restore(state.apollo.defaultClient);
+
+    // Set this on the server to optimize queries when SSR
+    ileterate.ssrForceFetchDelay = 100;
+  } else if (ssr) {
+    // Set this on the server to optimize queries when SSR
+    ileterate.ssrMode = true;
   }
 
   const apolloClient = new ApolloClient({
     link: httpLink,
     cache,
-    ...(ssr ? {
-      // Set this on the server to optimize queries when SSR
-      ssrMode: true,
-    } : {
-      // This will temporary disable query force-fetching
-      ssrForceFetchDelay: 100,
-    }),
+    ...ileterate,
   });
 
   return apolloClient;
