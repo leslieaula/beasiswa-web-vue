@@ -46,6 +46,10 @@
     display: block;
     color: rgba(255,255,255,.75);
     border-right: 1px solid rgba(255,255,255,.75);
+
+    &:hover, &:active, &:focus {
+      color: rgba(255,255,255,.75);
+    }
   }
 
   &:last-child {
