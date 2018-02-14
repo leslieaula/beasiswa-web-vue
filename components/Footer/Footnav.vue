@@ -66,7 +66,7 @@
   margin-top: 0;
   margin-bottom: .625em;
   color: rgba(255,255,255,.75);
-  font-size: .9375em;
+  font-size: 1em;
 }
 
 .footnav__item {
@@ -80,7 +80,7 @@
 .footnav__list__item {
   a {
     color: rgba(255,255,255,.5);
-    font-size: .875em;
+    font-size: .95em;
 
     &:hover, &:active, &:focus {
       color: rgba(255,255,255,.5);
