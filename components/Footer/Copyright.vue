@@ -22,7 +22,7 @@
 .copyright {
   padding: .625em 0;
   background-color: #212426;
-  font-size: .95em;
+  font-size: .875em;
 
   .wrapper {
     display: flex;

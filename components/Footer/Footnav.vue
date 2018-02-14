@@ -26,8 +26,27 @@
           </div>
         </div>
       </div>
-      <div class="footnav__item">
-        tes
+      <div class="footnav__item footnav__item--social">
+        <div class="socialbutton">
+          <div class="socialbutton__item">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="socialbutton__item">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="socialbutton__item">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="socialbutton__item">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <h6 class="footnav__title">
+          Punya Kritik dan Saran ?
+        </h6>
+        <div class="footnav__button">
+          <a href="#">Hubungi Kami</a>
+        </div>
       </div>
     </div>
   </div>
@@ -47,16 +66,72 @@
   margin-top: 0;
   margin-bottom: .625em;
   color: rgba(255,255,255,.75);
-  font-size: 1.15em;
+  font-size: .9375em;
+}
+
+.footnav__item {
+  flex: 1 1 0;
+}
+
+.footnav__item--social {
+  text-align: center;
 }
 
 .footnav__list__item {
   a {
     color: rgba(255,255,255,.5);
-    font-size: .95em;
+    font-size: .875em;
 
     &:hover, &:active, &:focus {
       color: rgba(255,255,255,.5);
+    }
+  }
+}
+
+.footnav__button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    opacity: .9;
+    font-weight: 600;
+    display: block;
+    font-size: .875em;
+    padding: .75em 1.375em;
+    background-color: #fc7136;
+    border-radius: 99px;
+    border: 1px solid #fc7136;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.socialbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.socialbutton__item {
+  width: 2.3em;
+  height: 2.3em;
+  margin: 0 5px;
+  border-radius: 99px;
+  background-color: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: rgba(255,255,255,.85);
+    font-size: 1em;
+
+    &:hover, &:active, &:focus {
+      color: rgba(255,255,255,.85);
     }
   }
 }
