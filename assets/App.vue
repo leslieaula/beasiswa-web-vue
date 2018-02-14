@@ -1,25 +1,26 @@
 <template>
   <div id="app">
     <Header />
-    <div class="content">
+    <div id="content">
       <router-view></router-view>
     </div>
-    <div class="footer">
-      footer
-    </div>
+    <Footer />
   </div>
 </template>
 <script>
 import Header from 'components/Header';
+import Footer from 'components/Footer';
 
 export default {
   components: {
     Header,
+    Footer,
   },
 };
 </script>
 <style lang="scss">
-* {
-  box-sizing: border-box;
+.wrapper {
+  max-width: 1200px;
+  padding: 0 30px;
 }
 </style>
