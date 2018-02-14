@@ -52,7 +52,7 @@
     "vuetify": "^0.17.4",
     "vuex": "^2.3.1",
     "vuex-router-sync": "^4.1.2",
-    "webpack": "^2.2.1",
+    "webpack": "^2.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
