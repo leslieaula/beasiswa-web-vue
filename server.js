@@ -119,11 +119,7 @@ function render(req, res) {
     }
   }
 
-  const context = {
-    title: 'Index Beasiswa', // default title
-    url: req.url,
-  };
-  renderer.renderToString(context, (err, html) => {
+  renderer.renderToString(null, (err, html) => {
     if (err) {
       return handleError(err);
     }
