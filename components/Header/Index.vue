@@ -22,6 +22,25 @@
               </div>
             </div>
           </div>
+          <div class="main-nav__item">
+            <a href="#" @click.prevent="dropdownToggle($event)" @blur="dropdownReset()">
+              Sekolah <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+            <div class="main-nav__dropdown">
+              <div class="main-nav__dropdown__item">
+                <a href="#">Perguruan Tinggi</a>
+              </div>
+              <div class="main-nav__dropdown__item">
+                <a href="#">SMA</a>
+              </div>
+              <div class="main-nav__dropdown__item">
+                <a href="#">SMP</a>
+              </div>
+              <div class="main-nav__dropdown__item">
+                <a href="#">SD</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="nav__item">
@@ -182,6 +201,7 @@ export default {
 
     &:hover, &:focus {
       text-decoration: none;
+      color: #fc7136;
     }
   }
 }
