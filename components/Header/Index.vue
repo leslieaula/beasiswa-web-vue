@@ -3,7 +3,12 @@
     <div class="nav">
       <div class="nav__item">
         <div class="logo">
-          Index Beasiswa
+          <div class="logo__image">
+            <img src="/static/ui/Index-Beasiswa-Logo-Icon.svg" />
+          </div>
+          <div class="logo__text">
+            <img src="/static/ui/Index-Beasiswa-Logo-Text.png" />
+          </div>
         </div>
         <div class="main-nav">
           <div class="main-nav__item">
@@ -161,12 +166,36 @@ export default {
 .logo {
   font-size: 20px;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+
+  img {
+    height: 30px;
+  }
+}
+
+.logo__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 20px;
+  }
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 50px;
   height: 100%;
 }
 

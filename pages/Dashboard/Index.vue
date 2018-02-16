@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import SearchMain from './SearchMain';
+import SearchMain from './components/SearchMain';
 
 export default {
   metaInfo: {
