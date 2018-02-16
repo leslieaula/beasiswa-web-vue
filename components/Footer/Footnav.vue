@@ -64,7 +64,7 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
           <div class="socialbutton__item">
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/indexbeasiswa/" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
           <div class="socialbutton__item">
             <a href="#"><i class="fab fa-linkedin-in"></i></a>

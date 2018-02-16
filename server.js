@@ -63,7 +63,7 @@ const serve = (localpath, cache) => express.static(resolve(localpath), {
 });
 
 app.use(compression({ threshold: 0 }));
-app.use(favicon('./static/favicon.ico'));
+app.use(favicon('./static/ui/Index-Beasiswa-Logo-Icon.svg'));
 app.use('/static', serve('./static', true));
 app.use('/public', serve('./public', true));
 app.use('/static/robots.txt', serve('./robots.txt'));
