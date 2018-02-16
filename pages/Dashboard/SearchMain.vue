@@ -1,7 +1,16 @@
 <template>
   <div class="searchmain">
-    <div class="searchmain__form">
+    <div class="searchmain__header">
       <div class="wrapper">
+        <h1>
+          <span class="light">Ayo bermimpi besar</span><br />
+          Kami akan membantu anda mewujudkannya
+        </h1>
+        <h2>Temukan beasiswa dan sekolah yang sesuai untukmu</h2>
+      </div>
+    </div>
+    <div class="searchmain__form">
+      <div class="wrapper d-flex justify-between align-center">
         <div class="searchmain__box">
           <div class="searchmain__input">
             <select v-model="type">
@@ -61,6 +70,11 @@ export default {
       return [];
     },
   },
+  watch: {
+    type() {
+      this.levelInput = '1';
+    },
+  },
 };
 </script>
 <style lang="scss">
@@ -68,16 +82,31 @@ export default {
   height: 500px;
   background: #677079;
   box-shadow: inset 0 -300px 300px -150px rgba(10,12,15,.6);
+  position: relative;
+  z-index: 1;
 
-  .wrapper {
-    display: flex;
-    justify-content: center;
+  h1 {
     text-align: center;
-  }
-}
+    color: #fff;
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 70px 0 0;
 
-.searchmain__form {
-  padding: 100px 0 0;
+    .light {
+      font-weight: 300;
+    }
+  }
+
+  h2 {
+    font-size: 1.25em;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-weight: 300;
+    color: #fff;
+    opacity: .9;
+  }
 }
 
 .searchmain__box {
@@ -87,6 +116,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 
 .searchmain__input {

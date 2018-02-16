@@ -72,6 +72,8 @@ export default {
   background: white;
   border-bottom: 1px solid #d7dadf;
   box-shadow: 0 -10px 20px 10px rgba(44,48,52,0.2);
+  position: relative;
+  z-index: 2;
 }
 
 .nav {

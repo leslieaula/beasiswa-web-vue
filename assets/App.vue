@@ -24,4 +24,20 @@ export default {
   padding: 0 30px;
   margin: auto;
 }
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.text-center {
+  text-align: center;
+}
 </style>
