@@ -19,6 +19,11 @@ export default {
 };
 </script>
 <style lang="scss">
+#content {
+  position: relative;
+  z-index: 1;
+}
+
 .wrapper {
   max-width: 1200px;
   padding: 0 30px;

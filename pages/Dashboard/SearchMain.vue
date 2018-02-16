@@ -82,8 +82,6 @@ export default {
   height: 500px;
   background: #677079;
   box-shadow: inset 0 -300px 300px -150px rgba(10,12,15,.6);
-  position: relative;
-  z-index: 1;
 
   h1 {
     text-align: center;
