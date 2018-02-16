@@ -22,6 +22,7 @@ export function createRouter() {
     scrollBehavior: () => ({ y: 0 }),
     routes: [
       route('Dashboard', '/', 'pages/Dashboard/Index'),
+      route('Scholarship Detail', '/beasiswa/detail', 'pages/Scholarship/Detail'),
       // Global redirect for 404
       { path: '*', redirect: '/' },
     ],
