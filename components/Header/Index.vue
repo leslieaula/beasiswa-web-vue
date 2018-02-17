@@ -141,7 +141,7 @@ export default {
     padding: 8px 20px;
     text-transform: capitalize;
 
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
       text-decoration: none;
     }
   }
@@ -193,8 +193,9 @@ export default {
   a {
     color: #fff;
 
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
       color: #fff;
+      text-decoration: none;
     }
   }
 }
@@ -209,8 +210,9 @@ export default {
   a {
     color: #3c92d4;
 
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
       color: #3c92d4;
+      text-decoration: none;
     }
   }
 }
@@ -225,8 +227,9 @@ export default {
   a {
     color: #acb4be;
 
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
       color: #acb4be;
+      text-decoration: none;
     }
   }
 }
@@ -332,7 +335,8 @@ export default {
     padding: 0 30px;
     height: 100%;
 
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
+      text-decoration: none;
       text-decoration: none;
       color: #fc7136;
     }
