@@ -4,7 +4,7 @@
       <div class="nav__item">
         <div class="logo">
           <div class="logo__image">
-            <img src="/static/ui/Index-Beasiswa-Logo-Icon.svg" />
+            <img src="/static/ui/Index-Beasiswa-Logo-Icon.png" />
           </div>
           <div class="logo__text">
             <img src="/static/ui/Index-Beasiswa-Logo-Text.png" class="logo__text--black" />
@@ -233,7 +233,7 @@ export default {
   margin-right: 15px;
 
   img {
-    height: 30px;
+    height: 45px;
   }
 
   @media screen and (max-width: 635px) {
