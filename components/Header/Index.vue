@@ -107,6 +107,7 @@ export default {
     background-color: #fc7136;
     color: #fff;
     height: 50px;
+    border-bottom: none;
   }
 }
 
