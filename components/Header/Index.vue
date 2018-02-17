@@ -7,7 +7,8 @@
             <img src="/static/ui/Index-Beasiswa-Logo-Icon.svg" />
           </div>
           <div class="logo__text">
-            <img src="/static/ui/Index-Beasiswa-Logo-Text.png" />
+            <img src="/static/ui/Index-Beasiswa-Logo-Text.png" class="logo__text--black" />
+            <img src="/static/ui/Index-Beasiswa-Logo-Text-White.png" class="logo__text--white" />
           </div>
         </div>
         <div class="main-nav">
@@ -49,7 +50,10 @@
         </div>
       </div>
       <div class="nav__item">
-        <div class="not-authenticated">
+        <div id="not-authenticated">
+          <div class="nav__mobile-button">
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+          </div>
           <div class="nav__button nav__button--bg-primary">
             <a href="#">Masuk</a>
           </div>
@@ -57,7 +61,7 @@
             <a href="#">Daftar</a>
           </div>
         </div>
-        <div class="nav__button nav__button--outline-grey">
+        <div class="nav__button nav__button--outline-grey" id="search-button">
           <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
         </div>
       </div>
@@ -93,11 +97,17 @@ export default {
 #header {
   height: 75px;
   padding: 0 20px;
-  background: white;
+  background: #fff;
   border-bottom: 1px solid #d7dadf;
   box-shadow: 0 -10px 20px 10px rgba(44,48,52,0.2);
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 635px) {
+    background-color: #fc7136;
+    color: #fff;
+    height: 50px;
+  }
 }
 
 .nav {
@@ -111,6 +121,13 @@ export default {
   display: flex;
   align-items: center;
   height: 100%;
+
+  @media screen and (max-width: 635px) {
+    &:first-child {
+      width: 100%;
+      justify-content: center;
+    }
+  }
 }
 
 .nav__button {
@@ -125,6 +142,44 @@ export default {
 
     &:hover, &:focus {
       text-decoration: none;
+    }
+  }
+}
+
+.nav__mobile-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: #fff;
+  }
+}
+
+#not-authenticated {
+  @media screen and (max-width: 635px) {
+    position: absolute;
+    right: 20px;
+
+    .nav__button {
+      display: none;
+    }
+
+    .nav__mobile-button {
+      display: flex;
+    }
+  }
+}
+
+#search-button {
+  @media screen and (max-width: 635px) {
+    position: absolute;
+    left: 20px;
+    border: 0;
+
+    a {
+      padding: 0;
+      color: #fff;
     }
   }
 }
@@ -180,6 +235,10 @@ export default {
   img {
     height: 30px;
   }
+
+  @media screen and (max-width: 635px) {
+    display: none;
+  }
 }
 
 .logo__text {
@@ -189,6 +248,26 @@ export default {
 
   img {
     height: 20px;
+
+    @media screen and (max-width: 635px) {
+      height: 15px;
+    }
+  }
+}
+
+.logo__text--black {
+  display: block;
+
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+}
+
+.logo__text--white {
+  display: none;
+
+  @media screen and (max-width: 635px) {
+    display: block;
   }
 }
 
@@ -197,6 +276,18 @@ export default {
   align-items: center;
   margin-left: 50px;
   height: 100%;
+
+  @media screen and (max-width: 880px) {
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: 850px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 635px) {
+    display: none;
+  }
 }
 
 .main-nav__item {

@@ -108,6 +108,8 @@ export default {
 }
 
 .searchmain__box {
+  width: 100%;
+  max-width: 960px;
   background-color: rgba(255,255,255,.333);
   padding: 1.25em;
   border-radius: 5px;
@@ -119,6 +121,7 @@ export default {
 
 .searchmain__input {
   margin: 0 10px;
+  width: 30%;
 
   &:first-child {
     margin-left: 0;
@@ -126,6 +129,7 @@ export default {
 
   &:last-child {
     margin-right: 0;
+    width: 10%;
   }
 
   input[type=text] {
@@ -135,6 +139,7 @@ export default {
     height: 50px;
     border-radius: 5px;
     font-size: 1.2em;
+    width: 100%;
   }
 
   select {
@@ -144,7 +149,7 @@ export default {
     height: 50px;
     border-radius: 5px;
     font-size: 1.2em;
-    min-width: 220px;
+    width: 100%;
   }
 
   input[type=submit] {
@@ -156,6 +161,7 @@ export default {
     font-size: 1.2em;
     font-weight: 600;
     color: #fff;
+    width: 100%;
   }
 }
 </style>
