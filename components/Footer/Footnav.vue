@@ -136,6 +136,11 @@
     border: 1px solid #fc7136;
     color: #fff;
     cursor: pointer;
+
+    &:hover, &:active, &:focus {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }
 
