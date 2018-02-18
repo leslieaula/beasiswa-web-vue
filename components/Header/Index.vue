@@ -164,6 +164,10 @@ export default {
 
   a {
     color: #fff;
+
+    &:hover, &:active, &:focus {
+      color: #fff;
+    }
   }
 }
 
