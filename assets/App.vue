@@ -29,10 +29,6 @@ export default {
   max-width: 1200px;
   padding: 0 30px;
   margin: auto;
-
-  @media screen and (max-width: 960px) {
-    padding: 0;
-  }
 }
 
 .d-flex {

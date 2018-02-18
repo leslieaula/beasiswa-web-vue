@@ -52,13 +52,17 @@
       <div class="nav__item">
         <div id="not-authenticated">
           <div class="nav__mobile-button">
-            <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <a href="#" @click.prevent="navShow = !navShow">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="nav__button nav__button--bg-primary">
-            <a href="#">Masuk</a>
-          </div>
-          <div class="nav__button nav__button--outline-primary">
-            <a href="#">Daftar</a>
+          <div class="nav__wrapper" :class="{ 'show' : navShow }">
+            <div class="nav__button nav__button--bg-primary">
+              <a href="#">Masuk</a>
+            </div>
+            <div class="nav__button nav__button--outline-primary">
+              <a href="#">Daftar</a>
+            </div>
           </div>
         </div>
         <div class="nav__button nav__button--outline-grey" id="search-button">
@@ -70,6 +74,11 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      navShow: false,
+    };
+  },
   methods: {
     dropdownReset() {
       const elements = document.getElementsByClassName('main-nav__item');
@@ -158,17 +167,39 @@ export default {
 }
 
 #not-authenticated {
-  @media screen and (max-width: 635px) {
-    position: absolute;
-    right: 20px;
+  position: absolute;
+  right: 20px;
+}
 
-    .nav__button {
-      display: none;
-    }
+@media screen and (max-width: 635px) {
+  .nav__wrapper {
+    display: none;
 
-    .nav__mobile-button {
-      display: flex;
+    &.show {
+      position: absolute;
+      left: 0;
+      top: 50px;
+      width: 100%;
+
+      .nav__button {
+        display: block;
+        width: 100%;
+        margin: 0;
+        border: none;
+
+        a {
+          color: #333;
+          border-radius: 0;
+          background-color: #fff;
+          font-weight: 700;
+          border-bottom: 1px solid #d7dadf;
+        }
+      }
     }
+  }
+
+  .nav__mobile-button {
+    display: flex;
   }
 }
 

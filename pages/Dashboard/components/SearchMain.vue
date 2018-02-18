@@ -83,6 +83,22 @@ export default {
   background: #677079;
   box-shadow: inset 0 -300px 300px -150px rgba(10,12,15,.6);
 
+  @media screen and (max-width: 960px) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: 850px) {
+    height: 350px;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 600px;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 570px;
+  }
+
   h1 {
     text-align: center;
     color: #fff;
@@ -90,6 +106,22 @@ export default {
     margin-top: 0;
     margin-bottom: 40px;
     padding: 70px 0 0;
+
+    @media screen and (max-width: 960px) {
+      padding: 60px 0 30px 0;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+
+    @media screen and (max-width: 850px) {
+      padding: 40px 0 10px 0;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 1.5em;
+    }
 
     .light {
       font-weight: 300;
@@ -117,6 +149,11 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+    width: 100%;
+  }
 }
 
 .searchmain__input {
@@ -130,6 +167,21 @@ export default {
   &:last-child {
     margin-right: 0;
     width: 10%;
+  }
+
+  @media screen and (max-width: 800px) {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      width: 100%;
+    }
   }
 
   input[type=text] {

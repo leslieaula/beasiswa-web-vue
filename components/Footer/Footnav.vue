@@ -88,6 +88,10 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 850px) {
+      display: block;
+    }
   }
 }
 
