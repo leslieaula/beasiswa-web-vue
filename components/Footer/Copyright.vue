@@ -40,6 +40,10 @@
 .copyright__nav__item {
   color: rgba(255,255,255,.75);
 
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+
   a {
     padding: 0 10px;
     display: block;

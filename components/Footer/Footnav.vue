@@ -91,6 +91,8 @@
 
     @media screen and (max-width: 850px) {
       display: block;
+      margin: auto;
+      text-align: center;
     }
   }
 }
@@ -104,6 +106,14 @@
 
 .footnav__item {
   flex: 1 1 0;
+
+  @media screen and (max-width: 850px) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .footnav__item--social {

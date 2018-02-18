@@ -112,7 +112,7 @@ export default {
   position: relative;
   z-index: 2;
 
-  @media screen and (max-width: 635px) {
+  @media screen and (max-width: 640px) {
     background-color: #fc7136;
     color: #fff;
     height: 50px;
@@ -132,7 +132,7 @@ export default {
   align-items: center;
   height: 100%;
 
-  @media screen and (max-width: 635px) {
+  @media screen and (max-width: 640px) {
     &:first-child {
       width: 100%;
       justify-content: center;
@@ -167,7 +167,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 640px) {
   .nav__wrapper {
     display: none;
 
@@ -200,7 +200,7 @@ export default {
 }
 
 #search-button {
-  @media screen and (max-width: 635px) {
+  @media screen and (max-width: 640px) {
     position: absolute;
     left: 20px;
     border: 0;
@@ -279,7 +279,7 @@ export default {
     height: 45px;
   }
 
-  @media screen and (max-width: 635px) {
+  @media screen and (max-width: 640px) {
     display: none;
   }
 }
@@ -292,7 +292,7 @@ export default {
   img {
     height: 20px;
 
-    @media screen and (max-width: 635px) {
+    @media screen and (max-width: 640px) {
       height: 15px;
     }
   }
@@ -309,7 +309,7 @@ export default {
 .logo__text--white {
   display: none;
 
-  @media screen and (max-width: 635px) {
+  @media screen and (max-width: 640px) {
     display: block;
   }
 }
@@ -328,7 +328,7 @@ export default {
     margin-left: 0;
   }
 
-  @media screen and (max-width: 635px) {
+  @media screen and (max-width: 640px) {
     display: none;
   }
 }
