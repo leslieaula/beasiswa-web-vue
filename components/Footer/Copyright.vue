@@ -37,6 +37,14 @@
   align-items: center;
 }
 
+.copyright__text {
+  @media screen and (max-width: 640px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .copyright__nav__item {
   color: rgba(255,255,255,.75);
 

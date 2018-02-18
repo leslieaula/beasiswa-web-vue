@@ -88,8 +88,13 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     @media screen and (max-width: 850px) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 767px) {
       display: block;
       margin: auto;
       text-align: center;
@@ -106,13 +111,23 @@
 
 .footnav__item {
   flex: 1 1 0;
+  margin: auto;
 
   @media screen and (max-width: 850px) {
+    flex: unset;
+    display: block;
+    width: 33.333333%;
+    margin-top: 0;
     margin-bottom: 30px;
+    text-align: center;
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
   }
 }
 

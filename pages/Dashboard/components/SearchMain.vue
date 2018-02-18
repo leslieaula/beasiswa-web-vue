@@ -91,7 +91,7 @@ export default {
     height: 350px;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     height: 600px;
   }
 
@@ -150,7 +150,7 @@ export default {
   align-items: center;
   margin: auto;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     display: block;
     width: 100%;
   }
@@ -169,7 +169,7 @@ export default {
     width: 10%;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     display: block;
     width: 100%;
     margin: 15px 0;
