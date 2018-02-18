@@ -136,6 +136,7 @@ export default {
     &:first-child {
       width: 100%;
       justify-content: center;
+      padding-left: 20px;
     }
   }
 }
@@ -164,11 +165,6 @@ export default {
   a {
     color: #fff;
   }
-}
-
-#not-authenticated {
-  position: absolute;
-  right: 20px;
 }
 
 @media screen and (max-width: 635px) {
