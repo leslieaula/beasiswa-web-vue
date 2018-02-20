@@ -33,7 +33,7 @@
             <input type="text" placeholder="Kata Kunci" />
           </div>
           <div class="searchmain__input">
-            <input type="submit" value="Cari" />
+            <input type="submit" value="Cari" @click="search()" />
           </div>
         </div>
       </div>
@@ -68,6 +68,19 @@ export default {
       }
 
       return [];
+    },
+  },
+  methods: {
+    search() {
+      switch (this.type) {
+        case '1':
+          this.searchScholarship();
+          break;
+        default:
+      }
+    },
+    searchScholarship() {
+      this.$router.push({ path: '/beasiswa' });
     },
   },
   watch: {
