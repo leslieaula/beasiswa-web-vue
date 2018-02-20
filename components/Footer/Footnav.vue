@@ -13,6 +13,9 @@
             <a href="#">Pembuatan Website dan Aplikasi</a>
           </div>
           <div class="footnav__list__item">
+            <a href="#">Penyelenggara Acara</a>
+          </div>
+          <div class="footnav__list__item">
             <a href="#">Kerjasama Lainnya</a>
           </div>
         </div>
@@ -111,7 +114,7 @@
 
 .footnav__item {
   flex: 1 1 0;
-  margin: auto;
+  margin: 0 auto auto auto;
 
   @media screen and (max-width: 850px) {
     flex: unset;

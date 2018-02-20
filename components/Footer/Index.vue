@@ -18,5 +18,7 @@ export default {
 <style lang="scss">
 #footer {
   color: rgba(255,255,255,.5);
+  position: relative;
+  z-index: 2;
 }
 </style>
