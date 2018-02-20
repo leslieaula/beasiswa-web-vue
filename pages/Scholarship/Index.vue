@@ -3,7 +3,7 @@
     <Header />
     <div class="list__row">
       <div class="wrapper">
-        <Filter />
+        <FilterData />
         <div class="list__item">
           <h2><strong>3897</strong> beasiswa ditemukan</h2>
           <Pagination />
@@ -17,7 +17,7 @@
 </template>
 <script>
 import Header from './components/Header';
-import Filter from './components/Filter';
+import FilterData from './components/FilterData';
 import Pagination from './components/Pagination';
 import Data from './components/Data';
 
@@ -27,7 +27,7 @@ export default {
   },
   components: {
     Header,
-    Filter,
+    FilterData,
     Pagination,
     Data,
   },
