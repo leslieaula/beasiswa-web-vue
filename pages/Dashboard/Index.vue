@@ -8,7 +8,7 @@ import SearchMain from './components/SearchMain';
 
 export default {
   metaInfo: {
-    title: 'Portal Informasi Pendidikan dan Beasiswa - Index Beasiswa',
+    title: 'Index Beasiswa - Portal Informasi Pendidikan dan Beasiswa',
   },
   components: {
     SearchMain,
