@@ -127,9 +127,9 @@ export default {
     }
 
     @media screen and (max-width: 850px) {
-      padding: 40px 0 10px 0;
-      margin-bottom: 20px;
-      font-size: 2em;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      font-size: 1.8em;
     }
 
     @media screen and (max-width: 320px) {
@@ -149,6 +149,10 @@ export default {
     font-weight: 300;
     color: #fff;
     opacity: .9;
+
+    @media screen and (max-width: 850px) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -205,6 +209,11 @@ export default {
     border-radius: 5px;
     font-size: 1.2em;
     width: 100%;
+
+    @media screen and (max-width: 850px) {
+      height: 40px;
+      font-size: 1em;
+    }
   }
 
   select {
@@ -215,6 +224,11 @@ export default {
     border-radius: 5px;
     font-size: 1.2em;
     width: 100%;
+
+    @media screen and (max-width: 850px) {
+      height: 40px;
+      font-size: 1em;
+    }
   }
 
   input[type=submit] {
@@ -227,6 +241,11 @@ export default {
     font-weight: 600;
     color: #fff;
     width: 100%;
+
+    @media screen and (max-width: 850px) {
+      height: 40px;
+      font-size: 1em;
+    }
   }
 }
 </style>
