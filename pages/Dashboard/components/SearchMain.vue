@@ -105,7 +105,7 @@ export default {
   }
 
   @media screen and (max-width: 767px) {
-    height: 600px;
+    height: 485px;
   }
 
   @media screen and (max-width: 320px) {
