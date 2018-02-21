@@ -6,7 +6,11 @@
         <strong>Beasiswa</strong> disediakan oleh <strong>PT Telkomsel</strong>
       </div>
       <div class="list__desc">
-        Fellowship for recent college graduates from the United States to gain hands-on experience at the federal level in the public policy area of their choice. Award consists of a monthly stipend of $2200, round-trip transportation to Washington D.C., and health insurance. Fellows with a graduate degree ...
+        Fellowship for recent college graduates from the United States to gain
+        hands-on experience at the federal level in the public policy area of
+        their choice. Award consists of a monthly stipend of $2200, round-trip
+        transportation to Washington D.C., and health insurance. Fellows with
+        a graduate degree ...
       </div>
     </div>
     <div class="list__data__action">
