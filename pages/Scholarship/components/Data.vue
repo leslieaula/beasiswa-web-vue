@@ -13,6 +13,9 @@
       <div class="list__data__action__button">
         <i class="far fa-heart"></i> Save
       </div>
+      <div class="list__data__action__button">
+        <i class="fas fa-share-alt"></i> Share
+      </div>
     </div>
   </div>
 </template>
@@ -57,6 +60,15 @@
   background-color: #3c92d4;
   color: #fff;
   border-radius: 99px;
+  margin: 10px auto;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   i {
     font-size: 18px;
