@@ -109,7 +109,7 @@ export default {
   }
 
   @media screen and (max-width: 320px) {
-    height: 570px;
+    height: 470px;
   }
 
   h1 {
@@ -152,6 +152,10 @@ export default {
 
     @media screen and (max-width: 850px) {
       margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 1em;
     }
   }
 }
