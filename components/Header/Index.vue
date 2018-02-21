@@ -4,11 +4,11 @@
       <div class="nav__item">
         <div class="logo">
           <div class="logo__image">
-            <img src="/static/ui/Index-Beasiswa-Logo-Icon.png" />
+            <router-link :to="{ path: '/' }"><img src="/static/ui/Index-Beasiswa-Logo-Icon.png" /></router-link>
           </div>
           <div class="logo__text">
-            <img src="/static/ui/Eduklik-Logo-Text.png" class="logo__text--black" />
-            <img src="/static/ui/Eduklik-Logo-Text-White.png" class="logo__text--white" />
+            <router-link :to="{ path: '/' }"><img src="/static/ui/Eduklik-Logo-Text.png" class="logo__text--black" /></router-link>
+            <router-link :to="{ path: '/' }"><img src="/static/ui/Eduklik-Logo-Text-White.png" class="logo__text--white" /></router-link>
           </div>
         </div>
         <div class="main-nav">
