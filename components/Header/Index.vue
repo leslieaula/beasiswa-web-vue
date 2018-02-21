@@ -7,8 +7,8 @@
             <img src="/static/ui/Index-Beasiswa-Logo-Icon.png" />
           </div>
           <div class="logo__text">
-            <img src="/static/ui/Index-Beasiswa-Logo-Text.png" class="logo__text--black" />
-            <img src="/static/ui/Index-Beasiswa-Logo-Text-White.png" class="logo__text--white" />
+            <img src="/static/ui/Eduklik-Logo-Text.png" class="logo__text--black" />
+            <img src="/static/ui/Eduklik-Logo-Text-White.png" class="logo__text--white" />
           </div>
         </div>
         <div class="main-nav">
