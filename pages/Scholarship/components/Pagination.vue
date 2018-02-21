@@ -96,6 +96,10 @@
       color: #fff;
       font-weight: 600;
     }
+
+    &:hover, &:active, &:focus {
+      color: #333;
+    }
   }
 }
 
@@ -128,6 +132,10 @@
     &.active {
       color: #333;
       font-weight: 600;
+    }
+
+    &:hover, &:active, &:focus {
+      color: #333;
     }
   }
 }
