@@ -62,6 +62,10 @@
 
     a {
       background-color: transparent;
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+      }
     }
   }
 
@@ -70,6 +74,10 @@
 
     a {
       background-color: transparent;
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+      }
     }
   }
 
