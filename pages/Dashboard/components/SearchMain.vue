@@ -105,7 +105,7 @@ export default {
   }
 
   @media screen and (max-width: 767px) {
-    height: 485px;
+    height: 470px;
   }
 
   @media screen and (max-width: 320px) {
@@ -127,6 +127,12 @@ export default {
     }
 
     @media screen and (max-width: 850px) {
+      padding: 40px 0 20px 0;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    @media screen and (max-width: 767px) {
       padding: 10px 0;
       margin-bottom: 10px;
       font-size: 1.8em;
