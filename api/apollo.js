@@ -12,7 +12,7 @@ Vue.use(VueApollo);
 export function createApolloClient(ssr = false) {
   const httpLink = new HttpLink({
     // You should use an absolute URL here
-    uri: `${process.env.SERVER}/graphql`,
+    uri: 'https://api.graph.cool/simple/v1/cjdxua0np003o0186k4jmb8xh',
     fetch,
   });
 
